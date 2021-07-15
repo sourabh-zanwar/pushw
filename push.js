@@ -10,10 +10,11 @@ let vapidKeys = {
 push.setVapidDetails('mailto:test', vapidKeys.publicKey, vapidKeys.privateKey)
 
 let sub = {endpoint:
-    "https://fcm.googleapis.com/fcm/send/dxkMV5fxRGY:APA91bGDAM4KSRgDndk-_S4eirBbJo7Khb5jky4CboAZLpXStvgj3iBghjJwU2ygY0vIsDwZgMpEGJqprnjw_sW0a7TvmvrIqOgRXR1bjDndzOq7XAC--RLViLhanV_nsiy4Hy8U9oP3",
+        "https://fcm.googleapis.com/fcm/send/cCdzAJeJf08:APA91bEYJypgH5ZtW70DTqe5U9XTp9o96FDaxTfGCopENEtrtWJNdCGxaP1zcV4OOGdOkbEJh3bZRxYQnJlIt35KItoSNMgCLiRAkLlZ1UZsyQy-Hr9B3PMOrmofqbPDrKTnS_qFvhWE",
         expirationTime:null,
         keys:{
-            p256dh:"BFhfiFRk-263TIIB1L9gTzaJ4w5YArUw4J6esmrs7t9zweWA570yqF-q6U1zXwETIp1MztDIBi9tOkZ7OmR54jM",
-            auth:"FzZ_LVHobWaZHY-CwCxrUw"}}
+            p256dh:"BG51c8ShjjLqeYK8T4_GFbQJyFMQjR31voprqrd8phwCVFNTJa77093nuMutcXUlOzQ0rLgkH1RerTII8q37x6U",
+            auth:"U7rom0i0EFAczklKdSix-g"}}
 
 push.sendNotification(sub, 'text message')
+
