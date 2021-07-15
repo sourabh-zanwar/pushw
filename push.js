@@ -9,13 +9,11 @@ let vapidKeys = {
 
 push.setVapidDetails('mailto:test', vapidKeys.publicKey, vapidKeys.privateKey)
 
-let sub = {
-        endpoint:"https://par02p.notify.windows.com/w/?token=BQYAAAC4A0HECa6cAYB3Xuok4IJGFv7I6gpfsDirK2cuw9Qbdx%2bF5Ro01Ku%2f3rU86xJkqLVMXVeJ97TJJLf5bWpd3WzR7HhLf0gASX0rwLW9Upmx0cZS66BPE0qVdS7dTg2F35AzEkvtIIeXk4%2b9HPiJRaQqNhhelu9ZXB6DIN7BGLhA0zGCkZchguJYOAZpNW1Ck4Az66PSbUeZRJHuY08hJiWw3qXn2nOU%2fSylQk77LOFeUPgCvk1%2bu%2b0CReDtxZ5j4L9p0Zgb6Dw78aZ64lSMUTS69QAym4OCJkas4kfGl85UvrYFA8r%2b3nhkAlT60PawVULhS2Z89rBSXDF9FiwtHBZpQaFJ84SL5pTrKKNd%2b%2fhpiA%3d%3d",
+let sub = {endpoint:
+    "https://fcm.googleapis.com/fcm/send/dxkMV5fxRGY:APA91bGDAM4KSRgDndk-_S4eirBbJo7Khb5jky4CboAZLpXStvgj3iBghjJwU2ygY0vIsDwZgMpEGJqprnjw_sW0a7TvmvrIqOgRXR1bjDndzOq7XAC--RLViLhanV_nsiy4Hy8U9oP3",
         expirationTime:null,
         keys:{
-            p256dh:"BC8aaZi6Do4doxE12tS_akBh1rShzAJdLlJValPxMS3UDJRfiayOpJPHHgQcLvPyCeqP9YbKov38fiVa5GI4FkQ",
-            auth:"qiAlXwMpkNvo5daupvLV5w"
-        }
-    };
+            p256dh:"BFhfiFRk-263TIIB1L9gTzaJ4w5YArUw4J6esmrs7t9zweWA570yqF-q6U1zXwETIp1MztDIBi9tOkZ7OmR54jM",
+            auth:"FzZ_LVHobWaZHY-CwCxrUw"}}
 
 push.sendNotification(sub, 'text message')
