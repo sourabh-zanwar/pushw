@@ -10,13 +10,11 @@ let vapidKeys = {
 push.setVapidDetails('mailto:test', vapidKeys.publicKey, vapidKeys.privateKey)
 
 let sub = {
-    endpoint:
-        "https://fcm.googleapis.com/fcm/send/eCas2llpD-I:APA91bHMCt6XlNFOUVmgWm9buohDv-_zbTlZqV33cm_Es1WoYZV-3ViPrsGeKraVcxH442wK9qafN1IlPuaIP5ocFRQPjNaa2z3W6z92WVX_LdLRzpkIzMJMqzihKFrrdmSkIqIC85Vd",
-    expirationTime:null,
-    keys:
-        {
-            p256dh:"BI_z7I4GwiZCyxGdkEzMEEnAWWvc4jQ2LpNk4pFqSmBKR0_KYUGsDFlfQQpJ7VkTml77hsdFtWFfDHIwhE0whsQ",
-            auth:"ePK4EjzHFP3fxNgbPsfq_g"
+        endpoint:"https://par02p.notify.windows.com/w/?token=BQYAAAC4A0HECa6cAYB3Xuok4IJGFv7I6gpfsDirK2cuw9Qbdx%2bF5Ro01Ku%2f3rU86xJkqLVMXVeJ97TJJLf5bWpd3WzR7HhLf0gASX0rwLW9Upmx0cZS66BPE0qVdS7dTg2F35AzEkvtIIeXk4%2b9HPiJRaQqNhhelu9ZXB6DIN7BGLhA0zGCkZchguJYOAZpNW1Ck4Az66PSbUeZRJHuY08hJiWw3qXn2nOU%2fSylQk77LOFeUPgCvk1%2bu%2b0CReDtxZ5j4L9p0Zgb6Dw78aZ64lSMUTS69QAym4OCJkas4kfGl85UvrYFA8r%2b3nhkAlT60PawVULhS2Z89rBSXDF9FiwtHBZpQaFJ84SL5pTrKKNd%2b%2fhpiA%3d%3d",
+        expirationTime:null,
+        keys:{
+            p256dh:"BC8aaZi6Do4doxE12tS_akBh1rShzAJdLlJValPxMS3UDJRfiayOpJPHHgQcLvPyCeqP9YbKov38fiVa5GI4FkQ",
+            auth:"qiAlXwMpkNvo5daupvLV5w"
         }
     };
 

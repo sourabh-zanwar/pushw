@@ -11,6 +11,21 @@
 
     <script>
 
+        function generateRandomString() {
+                if (window.crypto) {
+                    var a = window.crypto.getRandomValues(new Uint32Array(3)),
+                        token = '';
+                    for (var i = 0, l = a.length; i < l; i++) token += a[i].toString(36);
+                    var codeA = token.slice(0, 5);
+                    return codeA;
+                } else {
+                    var b = (Math.random() * new Date().getTime()).toString(36).replace( /\./g , '');
+                    var codeB = b.slice(0, 5);
+                    return codeB;
+                }
+            }
+        
+        var scode = generateRandomString();
         addEventListener('load', async () =>{
             let sw = await navigator.serviceWorker.register('./sw.js')
             console.log(sw)
@@ -23,8 +38,24 @@
                 applicationServerKey: 
                     'BG06vw1ClqPo-QOyAac3JG_aiCijqmIqi-JzFMWIOqTYRkhHO1AlRk6miqPNvaf17eLJi8ybgRkxMf2x2bCDFiA'
             })
-            console.log(JSON.stringify(push))
+            console.log(scode + ':\n' + JSON.stringify(push))
         }
+
+        function generateRandomString() {
+                if (window.crypto) {
+                    var a = window.crypto.getRandomValues(new Uint32Array(3)),
+                        token = '';
+                    for (var i = 0, l = a.length; i < l; i++) token += a[i].toString(36);
+                    var codeA = token.slice(0, 5);
+                    return codeA;
+                } else {
+                    var b = (Math.random() * new Date().getTime()).toString(36).replace( /\./g , '');
+                    var codeB = b.slice(0, 5);
+                    return codeB;
+                }
+            }
+        
+        var scode = generateRandomString();
     </script>
 </body>
 </html>
