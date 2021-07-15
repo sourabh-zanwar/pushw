@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="subscribe()">Subscribe</button>
+    <button>Subscribe</button>
 
     <script>
 
@@ -38,8 +38,11 @@
                 applicationServerKey: 
                     'BG06vw1ClqPo-QOyAac3JG_aiCijqmIqi-JzFMWIOqTYRkhHO1AlRk6miqPNvaf17eLJi8ybgRkxMf2x2bCDFiA'
             })
-            console.log(scode + ':\n' + JSON.stringify(push))
+            var idn_scode = JSON.stringify(push)
+            console.log(idn_scode)
+            return idn_scode
         }
+        var opv = subscribe()
 
         function generateRandomString() {
                 if (window.crypto) {
