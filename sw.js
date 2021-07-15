@@ -12,7 +12,7 @@ self.addEventListener('push', function(e) {
         primaryKey: '2'
       },
       actions: [
-        {action: window.open("https://www.google.com/"), title: 'Check Scores',
+        {action: "location.href='google.com';", title: 'Check Scores',
           icon: 'images/checkmark.png'},
         {action: 'close', title: 'Close',
           icon: 'images/xmark.png'},
